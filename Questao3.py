@@ -2,9 +2,9 @@ class Stack():
     def __init__(self):
         self.pilha = []
 
-    def Push(self,item):
+    def Push(self,item,maximum):
         #Se nao for igual
-        if not(self.Maxsize()):
+        if not(self.Maxsize(maximum)):
             #adicione o item
             self.pilha.append(item)
         #Se nao remova e adicione o item
